@@ -3,6 +3,9 @@ if SHIELD_REDOX_LEFT
 config ZMK_KEYBOARD_NAME
     default "REDOX"
     
+config ZMK_USB
+    default y
+
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
