@@ -17,12 +17,4 @@
 		, <&pro_micro 8 GPIO_ACTIVE_HIGH>
 		, <&pro_micro 9 GPIO_ACTIVE_HIGH>
 		;
-
-        row-gpios
-            = <&xiao_d 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;
 };
