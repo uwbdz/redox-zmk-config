@@ -120,7 +120,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+      Qwery {
             bindings = <
 &bootloader
 &kp GRAVE       &kp NUMBER_1        &kp NUMBER_2  &kp NUMBER_3    &kp NUMBER_4             &kp NUMBER_5  &none            &none  &none         &none                            &none           &none         &none                  &kp BACKSPACE
@@ -132,9 +132,10 @@
                                                                   &lt LAYER_SYMBOLS ENTER  &none         &none            &none  &none         &lt LAYER_NUMBERS ESCAPE
                                                                                                          &none            &none
             >;
+            label = "Qwery;
         };
 
-        layer_1 {
+        Navi {
             bindings = <
 &bootloader
 &trans       &trans           &trans  &trans             &trans  &trans  &trans             &trans  &trans  &trans  &trans             &trans  &trans               &trans
@@ -146,9 +147,11 @@
                                                          &trans  &trans  &trans             &trans  &trans  &trans
                                                                          &trans             &trans
             >;
+
+            label = "Navi";
         };
 
-        layer_2 {
+        Symbol {
             bindings = <
 &bootloader
 &trans       &trans           &trans       &trans         &trans        &trans         &trans    &trans  &trans  &trans                &trans                 &trans             &trans              &trans
@@ -160,9 +163,11 @@
                                                           &trans        &trans         &trans    &trans  &trans  &trans
                                                                                        &trans    &trans
             >;
+
+            label = "Symbol";
         };
 
-        layer_3 {
+        Modify {
             bindings = <
 &bootloader
 &trans         &trans         &trans             &trans            &trans     &trans  &trans    &trans  &trans      &trans          &trans          &trans         &trans           &trans
@@ -174,6 +179,8 @@
                                                                    &trans     &trans  &trans    &trans  &trans      &trans
                                                                                       &trans    &trans
             >;
+
+            label = "Modify";
         };
 
         layer_4 {
@@ -190,7 +197,7 @@
             >;
         };
 
-        layer_5 {
+        Flash{
             bindings = <
 &bootloader
 &trans        &trans        &trans        &trans        &trans        &trans  &trans    &trans  &trans  &trans                &trans                 &trans        &trans        &trans
@@ -202,6 +209,17 @@
                                                         &trans        &trans  &trans    &trans  &trans  &trans
                                                                               &trans    &trans
             >;
+
+            label = "Flash";
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        to_flash {
+            if-layers = <3 3>;
+            then-layer = <5>;
         };
     };
 };
