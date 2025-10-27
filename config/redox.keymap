@@ -147,11 +147,11 @@
 
         Navi {
             // --------------------------------------------------------------------------------------------------------------------------
-            // | ESC   |  1  |  2  |   3   |   4   |  5  |                   ---              |  6  |  7  |   8  |  9   |  0  |  DEL  |
-            // | ESC   |  1  |  2  |   3   |   4   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  0  |  DEL  |
-            // | CTRL  |  -  |  =  |   [   |   ]   |  \  |   [   |           ---        |  ]  |  *  |  4  |   5  |  6   |  +  |   -   |
-            // | SHIFT | ESC | GUI | COPY  | PASTE |     | PG_UP | PG_DOWN | --- | HOME | END |  \  |  1  |   2  |  3   | RET |  RET  |
-            // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |    RAISE  | LEFT | DOWN | UP  | RIGHT |
+            // | ESC   | F1  | F2  |  F3   |  F4   |     |                   ---              |     |     |   /  |  *   |  -  |  DEL  |
+            // | ESC   | F5  | F6  |  F7   |  F8   |  5  |   (   |           ---        |  )  |  6  |  7  |   8  |  9   |  +  |  DEL  |
+            // | CTRL  | F9  | F10 |  F11  |  F12  |  \  |   [   |           ---        |  ]  |  *  |  4  |   5  |  6   |     |   -   |
+            // | SHIFT | ESC | GUI | COPY  | PASTE |     | PG_UP | PG_DOWN | --- | HOME | END |  \  |  1  |   2  |  3   |ENTER|  RET  |
+            // | CRTL  | ALT | GUI | LOWER |     GUI     | LOWER | SPACE   | --- | DEL  |  0  |           |   0  |   .  |     | RIGHT |
 
             bindings = <
 &dongle_bootload_macro  &trans  &trans   &trans   &trans   &trans                                               &trans  &trans          &trans          &trans           &trans  &trans
