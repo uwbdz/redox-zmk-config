@@ -36,12 +36,12 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)      RC(4,4)    RC(4,5) RC(4,6) RC(4,7) RC(4,8) 
         diode-direction = "col2row";
 //        wakeup-source;
 
-        row-gpios
-            = <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&pro_micro 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+ row-gpios
+            = <&xiao_d 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
     };
 };
